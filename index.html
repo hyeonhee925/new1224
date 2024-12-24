@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레츠코레일</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- ------------------------------------------header -->
+        <header>
+            <h1><a href="#"><img src="images/logo_04.png" alt="logo"></a></h1>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#">승차권</a></li>
+                    <li><a href="#">여행상품</a></li>
+                    <li><a href="#">고객안내</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">철도노선도</a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">기업전용</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">코레일홈페이지</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ------------------------------------------visual -->
+        <div class="visual">
+            <div class="bac"><img src="images/bac-img_07.png" alt="기차이미지"></div>
+            <div class="a-box">
+                <ul class="a-box1">
+                    <li><a href="#b2-1" class="on">승차권 예매</a></li>
+                    <li><a href="#b2-2">발권 조회</a></li>
+                </ul>
+                <ul class="a-box2">
+                    <li id="b2-1">
+                        <div class="a-box_l">
+                            <div class="movebutton">
+                                <div class="move"></div>
+                                <div class="move-1 " onclick="moveSlider(0)">환승</div>
+                                <div class="move-1 on1" onclick="moveSlider(1)">직통</div>
+                                <div class="move-1" onclick="moveSlider(2)">왕복</div>
+                            </div>
+                            <div class="place">
+                                <div class="pl1">
+                                    <span>서울</span>
+                                    <button><img src="images/images/c_09.png" alt="화살표"></button>
+                                    <span>TO</span>
+                                </div>
+                                <div class="pl2">
+                                    <p>출발역</p>
+                                    <p>도착역</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="a-box_r">
+                            <div class="linebox1">
+                                <ul>
+                                    <li class="on2">일반승차권</li>
+                                    <li>할인승차권</li>
+                                    <li>4인동반석</li>
+                                    <li>관광열차</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="linebox2">
+                                <table>
+                                    <tr>
+                                        <td><input class="st" type="date" id="user-date"></td>
+                                        <td><select class="st2" name="" id="">
+                                                <option value="">시간</option>
+                                                <option value="">1am</option>
+                                                <option value="">2am</option>
+                                                <option value="">3am</option>
+                                                <option value="">4am</option>
+                                            </select></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
+                            <div class="linebox3">
+                                <table>
+                                    <tr>
+                                        <td><select name="" id="">
+                                                <option value="">성인 (만 13세 이상)</option>
+                                                <option value="">0명</option>
+                                                <option value="">1명</option>
+                                                <option value="">2명</option>
+                                                <option value="">3명</option>
+                                                <option value="">4명</option>
+                                            </select></td>
+                                        <td><select name="" id="">
+                                                <option value="">소아 (만 6~12세)</option>
+                                                <option value="">0명</option>
+                                                <option value="">1명</option>
+                                                <option value="">2명</option>
+                                                <option value="">3명</option>
+                                                <option value="">4명</option>
+                                            </select></td>
+                                        <td><select name="" id="">
+                                                <option value="">유아 (만 5세 이하)</option>
+                                                <option value="">0명</option>
+                                                <option value="">1명</option>
+                                                <option value="">2명</option>
+                                                <option value="">3명</option>
+                                                <option value="">4명</option>
+                                            </select></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="a-box_rr">
+                            <button>승차권 예매</button>
+                        </div>
+                    </li>
+
+                    <!-- -------------------------------------발권 조회 창--------- -->
+
+                    <li id="b2-2">
+                        <div class="box-t">
+                            <div class="movebutton2">
+                                <div class="move2"></div>
+                                <div class="move2-1 on1-1" onclick="moveSlider2(0)"><a href="#no1">회원</a></div>
+                                <div class="move2-1 " onclick="moveSlider2(1)"><a href="#no">비회원</a></div>
+                            </div>
+                        </div>
+
+                        <!-- -------------------------------회원 창 -->
+                        <div id="no1" class="box-t2">
+                            <div class="linebox1-1">
+                                <ul id="ti">
+                                    <li><a href="#lo1" class="on2-2">&nbsp; 맴버쉽번호 로그인 &nbsp;</a></li>
+                                    <li><a href="#lo2">&nbsp;이메일 아이디 로그인&nbsp;</a></li>
+                                    <li><a href="#lo3">&nbsp; 전화번호 로그인 &nbsp;</a></li>
+                                </ul>
+                                
+                                <div  class="b-box">
+                                    <!-- ----------------------맴버쉽번호  -->
+                                    <div id="lo1" class="box-m1 bx">
+                                        <div class="box-m">
+                                            <table>
+                                                <tr class="num1">
+                                                    <td><input class="num1-1" type="text" placeholder="코레일맴버쉽번호"></td>
+                                                    <td><input class="num1-2" type="text" placeholder="비밀번호"></td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                        <div class="box-b">
+                                            <div class="checkb">
+                                                <input class="check" type="checkbox" id="ch"></input><label for="ch">맴버쉽 번호
+                                                    기억</label>
+                                            </div>
+                                            <div class="but-box">
+                                                <button>맴버쉽 번호 찾기</button>
+                                                <button>비밀번호 찾기</button>
+                                                <button>맴버쉽 가입하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ----------------------이메일 주소  -->
+                                    <div id="lo2" class="box-m2 bx">
+                                        <div class="box-m">
+                                            <table>
+                                                <tr class="num2">
+                                                    <td><input class="num2-1" type="text" placeholder="이메일 주소"></td>
+                                                    <td><input class="num2-2" type="text" placeholder="비밀번호"></td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                        <div class="box-b">
+                                            <div class="checkb">
+                                                <input class="check" type="checkbox" id="ch"></input><label for="ch">이메일 주소
+                                                    기억</label>
+                                            </div>
+                                            <div class="but-box">
+                                                <button>이메일 주소 찾기</button>
+                                                <button>비밀번호 찾기</button>
+                                                <button>회원 가입하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ----------------------전화번호 주소  -->
+                                    <div id="lo3" class="box-m3 bx">
+                                        <div class="box-m">
+                                            <table>
+                                                <tr class="num3">
+                                                    <td><input class="num3-1" type="text" placeholder="휴대전화"></td>
+                                                    <td><input class="num3-2" type="text" placeholder="비밀번호"></td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                        <div class="box-b">
+                                            <div class="checkb">
+                                                <input class="check" type="checkbox" id="ch"></input><label for="ch">전화번호 기억</label>
+                                            </div>
+                                            <div class="but-box2">
+                                                <button>비밀번호 찾기</button>
+                                                <button>회원 가입하기</button>
+                                            </div>
+                                        </div>
+                                    </div>  <!-- 전화번호 주소 끝  -->
+                                </div>
+
+                                <div class="a-box_rr2">
+                                    <button>승차권 조회</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ------------------------------비회원 창 -->
+
+                        <div id="no" class="no-login">
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td><input class="no-login1" type="text" placeholder="이름"></td>
+                                        <td><input class="no-login2" type="text" placeholder="전화번호"></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="a-box_rr3">
+                                <button>승차권 조회</button>
+                            </div>
+                        </div>
+
+
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------con1 -->
+        <div class="con1">
+            <article class="con1-1">
+                <h2>공지사항</h2>
+                <table>
+                    <tr>
+                        <td><a href="#">11월 26일자 코레일톡 배포분에 대한 일부 오류 안내</a></td>
+                        <td class="sm">2024-12-18 </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">서해금삧열차 편성변경(감차)운행 알림</a></td>
+                        <td class="sm">2024-12-17 </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">대국민 서비스 아이디어 공모전</a></td>
+                        <td class="sm">2024-11-25 </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">일부 열차 승차권 예약발매일 조정 알림</a></td>
+                        <td class="sm">2024-11-22 </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">광역전철 운행시각 조정 알림</a></td>
+                        <td class="sm">2024-11-20 </td>
+                    </tr>
+                </table>
+            </article>
+            <article class="con1-2">
+                <ul class="icon">
+                    <li><a href="#"><img src="images/s-img1.png" alt="img1"></a></li>
+                    <li class="icon-d"><a href="#"><img src="images/s-img2.png" alt="img2"></a></li>
+                    <li><a href="#"><img src="images/s-img3.png" alt="img3"></a></li>
+                </ul>
+            </article>
+        </div>
+
+        <!-- ------------------------------------------con2 -->
+        <div class="con2">
+            <section class="con2-1"></section>
+            <section class="con2-2">
+                <div class="trip"><a href="#"><img src="images/trip-img1.png" alt="이미지"></a></div>
+                <div class="trip"><a href="#"><img src="images/trip-img2.png" alt="이미지"></a></div>
+                <div class="trip"><a href="#"><img src="images/trip-img3.png" alt="이미지"></a></div>
+
+            </section>
+        </div>
+
+        <!-- ------------------------------------------footer -->
+        <footer>
+            <div class="foot">
+                <h1><img src="images/f-logo.png" alt="푸터로고"></h1>
+                <h3>한국철도공사</h3>
+                <address>
+                    대표:한문희 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    사업자등록 : 314-82-10024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    통신판매업신고:대전동구-0233호 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    주소:(34618)대전광역시 동구 중앙로 240 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    TEL:1588-7788(이용료 발신자 부담) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    FAX:02-361-8385&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </address>
+                <span>CIOYRIGHT &copy; KOREA RAILROAD.ALL RIGHTS RESERVED. </span>
+            </div>
+
+            <div class="foot2">
+                <ul>
+                    <li><a href="#"><img src="images/images/CCM_03.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/images/CHL_03.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/images/ICSI_03.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/images/KJ_03.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/images/KNQA_03.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/images/KSI_03.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/images/NBA_03.png" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <div class="r-f">
+        
+        <div id="as1" class="as-s">
+            <p class="p1">운영시간</p>
+            <p class="p2">상담원 : 08:00 ~ 20:00</p>
+            <p class="p3">A R S : 08:00 ~ 20:00</p>
+            <P class="p4">전화번호</P>
+            <P class="p5">1588 - 7788</P>
+            <P class="p6">(이용료 발신자 부담)</P>
+            <span>챗봇상담</span>
+        </div>
+        <div class="quick">
+            <a href="#" class="top">↑</a>
+            <a href="#as1" class="as">고객센터</a>
+        </div>
+    </div>
+</body>
+
+</html>
