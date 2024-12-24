@@ -100,6 +100,11 @@ header .gnb li a {
     font-family: "NanumSquareB";
 }
 
+header .gnb li a:hover {
+    font-weight: bold;
+    
+}
+
 nav {
     position: absolute;
     /* position: fixed; */
@@ -121,6 +126,10 @@ nav>ul>li {
 nav>ul>li>a {
     font-size: 12px;
     font-family: "NanumSquareR";
+}
+
+nav>ul>li>a:hover{
+    font-weight: bold;
 }
 
 /*  --------------------------------------------visual------- */
@@ -848,8 +857,13 @@ input#user-date::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
+    
+}
+
+.con2 .con2-2 .trip:hover {
     box-shadow: 0px 0px 10px rgb(89, 89, 89) ;
 }
+
 
 .con2 .con2-2 .trip img {
     width: 100%;
