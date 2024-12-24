@@ -1,8 +1,19 @@
 
 $(function(){
+// ----------------------------서브 메뉴 창
+    $(".drop_box, .sub").hide();
 
-    
+    $(".gnb>ul>li>a, .drop_box, .sub").mouseover(function(){
+        $(".drop_box, .sub").stop().slideDown();
+    });
 
+    $(" .gnb>ul>li>a, .sub, .drop_box").mouseout(function(){
+        $(".drop_box , .sub").stop().slideUp();
+    });
+
+
+
+// ----------------------------- 승차권 예매 , 발권 조회 창
     $(".a-box2>li").hide();
 
     $(".a-box2>li:first").show();
@@ -139,9 +150,29 @@ $(window).scroll(function(){
 //     // $(".as-s").animate({ right: "-300px"},500);
 // });
 
-$(".as").click(function(event){
-    // $(".as-s").show();
-    // $(".quick").fadeToggle();
-    $(".as-s").fadeToggle({ right: "200px"},500);
+// $(".as").click(function(event){
+//     // $(".as-s").show();
+//     // $(".quick").fadeToggle();
+//     $(".as-s").fadeToggle({ right: "200px"},500);
     
-});
+// });
+
+// $(".as")
+
+
+
+// $(".a-box1>li a").click(function(ev){
+//     ev.preventDefault();  //a테그 사용 클릭시 위아래로 깔짝깔짝 움직이는거 안하게 하는 return false랑 같은 의미
+
+//     $(".a-box1>li a").removeClass("on");
+//     $(this).addClass("on");
+
+//     $(".a-box2>li").hide();
+//     $($(this).attr("href")).show(); //attr(속성이라는 뜻 어트리브트?)a=href,img=src 
+//     // return false;
+
+// });
+
+
+
+
