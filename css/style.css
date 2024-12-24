@@ -39,6 +39,12 @@ a {
     src: url(../font/NotoSansKR-Light.woff2);
 }
 
+@font-face {
+    font-family: "NotoSansKR-R";
+    font-weight:normal;
+    src: url(../font/NotoSansKR-Regular.woff2);
+}
+
 
 
 /* 레이아웃시작 */
@@ -51,86 +57,109 @@ a {
 }
 
 header {
-    width: 1300px;
+    width: 1313px;
     height: 165px;
     margin: 0 auto;
     display: flex;
 }
 
-header::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 header h1 {
-    float: left ;
-    width: 25%;
+    width: 500px;
     margin-top: 100px;
-    margin-left: 50px;
+    padding: 0 155px 0px 20px ;
 }
 
 header h1 img {
-    display: block;
     width: 100%;
 }
 
 header .gnb {
-    width: 60%;
+    width: 800px;
     height: 165px;
-    margin-left: 140px;
+    /* border: 1px solid; */
+    padding-top: 120px;
+    z-index: 5;
 }
 
-header .gnb ul {
+header .gnb>ul {
     display: flex;
-    right: 20px;
 }
 
-header .gnb li{
-    margin-top: 105px;
-    margin-left: 50px;
-    padding: 10px;
 
-}
-
-header .gnb li a {
+header .gnb>ul>li>a {
+    width: 150px;
     font-size: 20px;
     display: block;
-    text-align: center;
+    /* text-align: center; */
     font-family: "NanumSquareB";
+    /* border: 1px solid rebeccapurple; */
+    padding-bottom: 40px;
+    padding-left: 10px;
 }
 
-header .gnb li a:hover {
-    font-weight: bold;
-    
+header .gnb>ul>li:hover>a {
+    border-bottom: 2px solid #15589c;
 }
 
-nav {
+header .gnb .sub>li>a {
+    display: block;
+    width: auto;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: "NotoSansKR-R";
+    /* border: 1px solid; */
+    padding-left: 10px;
+}
+
+header .gnb .sub>li>a:hover {
+    text-decoration: underline;
+    /* border-bottom: 1px solid #15589c; */
+}
+
+header .gnb .sub .gr {
+    color: #a4a4a4;
+}
+
+header .drop_box {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    top: 165px;
+    z-index: 3;
+    left: 0;
+    /* border: 1px solid #c1bfbf; */
+}
+
+
+header nav {
     position: absolute;
     /* position: fixed; */
     margin: 0 auto;
+    z-index: 9;
 }
 
-nav>ul {
+header nav>ul {
     display: flex;
     width: 400px;
     margin-left:  880px;
 }
 
-nav>ul>li {
+header nav>ul>li {
     flex: 1;
     text-align: center;
     
 }
 
-nav>ul>li>a {
+header nav>ul>li>a {
     font-size: 12px;
     font-family: "NanumSquareR";
 }
 
-nav>ul>li>a:hover{
+header nav>ul>li>a:hover{
     font-weight: bold;
 }
+
 
 /*  --------------------------------------------visual------- */
 
