@@ -164,25 +164,18 @@ header nav>ul>li>a:hover{
 /*  --------------------------------------------visual------- */
 
 .visual {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: 511px;
-    overflow: hidden;
+    height: 720px;
 }
 
 .visual .bac {
-    display: block;
+    /* display: block; */
     width: 100%;
-    height: 100%;
+    height: 300px;
+    background-color: #206bb4;
 }
 
-
-.visual .bac img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
 
 .visual .a-box {
     position: absolute;
@@ -194,41 +187,67 @@ header nav>ul>li>a:hover{
 }
 
 .visual .a-box .a-box1 {
-    width: 660px;
+    width: 1112px;
     line-height: 60px;
     display: flex;
     position: absolute;
     font-size: 19px;
     font-family: "NanumSquareEB";
-    
+    /* border: 1px solid; */
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .visual .a-box .a-box1 li {
-    flex: 1;
-    
+    width:1110px;
+    height: 80px;
+    background-color: #a0a0a0;
+    border-radius: 20px 20px 0 0;
+    margin-right: 2px;
 }
 
 .visual .a-box .a-box1 li a {
     display: block;
-    background-color: #1966b2;
+    background-color: #a0a0a0;
     border-radius: 20px 20px 0 0;
     color: white;
     text-align: center;
     font-size: 19px;
-    margin-right: 2px;
+    /* margin-right: 2px; */
+    
+    
 }
 
 .visual .a-box .a-box1 li a.on {
     background-color: white;
     color: black;
+    
 }
+
+/* ------------------------------------------------ */
+
+.visual .a-box .a-box3 {
+    position: absolute;
+    /* border: 1px solid; */
+    width: 100%;
+    top: -75px;
+    padding-left: 70px;
+}
+
+.visual .a-box .a-box3 li {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family: "NanumSquareEB";
+}
+
 
 /* ----------------------------------------------------승차권 예매창 */
 
 .visual .a-box .a-box2 {
     width: 100%;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 80px;
     position: relative;
 }
 
@@ -237,8 +256,9 @@ header nav>ul>li>a:hover{
     display: flex;
     background-color: white;
     width: 100%;
-    height: 300px;
-    border-radius: 0px 20px 20px 20px;
+    height: 500px;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid gainsboro;
 }
 
 .visual .a-box .a-box2 .a-box_l {
@@ -328,13 +348,13 @@ header nav>ul>li>a:hover{
 }
 
 .visual .a-box .a-box2 .a-box_r {
-    width: 50%;
+    width: 52%;
     height: 300px;    
     /* border: 1px solid; */
 }
 
 .visual .a-box .a-box2 .a-box_r .linebox1 {
-    width: 570px;
+    width: 700px;
     height: 35px;
     margin-top: 47px;
     /* border: 1px solid; */
@@ -347,12 +367,13 @@ header nav>ul>li>a:hover{
 }
 
 .visual .a-box .a-box2 .a-box_r .linebox1 ul li {
-    width: 100px;
+    /* width: 140px; */
     line-height: 30px;
     text-align: center;
     font-size: 17px;  
     font-family: "NotoSansKR-L";  
     cursor: pointer;
+    /* border: 1px solid; */
 }
 
 .visual .a-box .a-box2 .a-box_r .linebox1 ul li.on2 {
@@ -458,486 +479,33 @@ input#user-date::-webkit-calendar-picker-indicator {
 }
 
 
-/* ----------------------------------------------------- 발권조회창 */
 
-.visual .a-box .a-box2 .box-t {
-    width: 1110px;
-    /* display: flex; */
-    height: 250px;
-    position: absolute;
-    /* border: 1px solid red; */
-}
+/* ---------------------------------------------visual2 */
 
-
-.visual .a-box .a-box2 .box-t .movebutton2 {
-    width: 220px;
-    height: 33px;
-    border-radius: 20px;
-    background-color: #ece9e9;
-    margin: 45px auto;
-    position: absolute;
-    display: flex;
-    margin-left: 60px;
-}
-
-.visual .a-box .a-box2 .box-t .movebutton2 .move2 {
-    position: absolute;
-    width: 50%;
-    background-color: #1966b2;
-    height: 33px;
-    border-radius: 20px;
-    transition: left 0.3s ease;
-}
-
-.visual .a-box .a-box2 .box-t .movebutton2 .move2-1 {
-    flex: 1;
-    line-height: 33px;
-    text-align: center;
-    z-index: 1;
-    font-weight: 500;
-    font-size: 14px;
-    color: #7d7d7d;
-    cursor: pointer;
-    /* border: 1px solid; */
-}
-
-.visual .a-box .a-box2 .box-t .movebutton2 .move2-1 a {
-    display: inline-block;
-    /* border: 1px solid; */
-    width: 100px;
-}
-
-.visual .a-box .a-box2 .box-t .movebutton2 .move2-1:hover {
-    color: rgb(75, 75, 75);
-}
-
-.visual .a-box .a-box2 .box-t .movebutton2 .move2-1.on1-1 {
-    color: white;
-}
-
-/* -----------------------------------------------------------회원 창 */
-
-.visual .a-box .a-box2 .box-t2 {
+.visual2 {
     position: relative;
-    width: 1110%;
-    /* background-color: #a6c4e1; */
-    height: 300px;
-}
-
-.visual .a-box .a-box2 .box-t2 .linebox1-1 #ti {
-    /* display: block; */
-    width: 500px;
-    /* flex: right; */
-    height: 33px;
-    margin-top: 45px;
-    margin-left: 330px;
-    /* border: 1px solid red; */
-}
-
-.visual .a-box .a-box2 .box-t2 .linebox1-1 ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.visual .a-box .a-box2 .box-t2 .linebox1-1 ul li a {
-    /* width: 100px; */
-    line-height: 30px;
-    text-align: center;
-    font-size: 17px;  
-    font-family: "NotoSansKR-L";  
-}
-
-.visual .a-box .a-box2 .box-t2 .linebox1-1 li a:hover {
-    border-bottom: 2px solid #1966b2;
-}
-
-
-
-.visual .a-box .a-box2 .box-t2 .linebox1-1 ul li a.on2-2 {
-    font-family: "NanumSquareEB";
-    color: #051135;
-}
-
-.visual .a-box .a-box2 .box-m {
-    position: absolute;
-    width: 1100px;
-    height: 100px;
-    /* margin-top: 100px; */
-    padding: 50px 170px;    
-    /* border: 1px solid; */
-    left: 0px;
-}
-
-.visual .a-box .a-box2 .box-m .num1-1, .num2-1, .num3-1 {
-    width: 370px;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #cccccc;
-    text-align: center;
-    cursor: pointer;
-}
-
-.visual .a-box .a-box2 .box-m .num1-1:hover {
-    border-bottom: 1px solid #1966b2;
-}
-
-.visual .a-box .a-box2 .box-m .num2-1:hover {
-    border-bottom: 1px solid #1966b2;
-}
-
-.visual .a-box .a-box2 .box-m .num3-1:hover {
-    border-bottom: 1px solid #1966b2;
-}
-
-
-.visual .a-box .a-box2 .box-m .num1-2, .num2-2, .num3-2 {
-    width: 280px;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #cccccc;
-    margin-left: 20px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.visual .a-box .a-box2 .box-m .num1-2:hover {
-    border-bottom: 1px solid #1966b2;
-}
-
-.visual .a-box .a-box2 .box-m .num2-2:hover {
-    border-bottom: 1px solid #1966b2;
-}
-
-.visual .a-box .a-box2 .box-m .num3-2:hover {
-    border-bottom: 1px solid #1966b2;
-}
-
-.visual .a-box .a-box2 .box-b {
-    position: absolute;
-    width: 1100px;
-    height: 80px;
-    margin-top: 120px;
-    padding: 0px 170px;
-    display: flex;
-    /* border: 1px solid; */
-}
-
-.visual .a-box .a-box2 .box-b .checkb {
-    height: 30px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.visual .a-box .a-box2 .box-b .checkb label {
-    width: 100px;
-    display: block;
-    font-size: 10px;
-    margin-left: 10px;
-}
-
-.visual .a-box .a-box2 .box-b .but-box {
-    width: 350px;
-    height: 35px;
-    margin-left: 230px;
-}
-
-.visual .a-box .a-box2 .box-b .but-box2 {
-    width: 350px;
-    height: 35px;
-    margin-left: 340px;
-    /* display: none; */
-}
-
-
-.visual .a-box .a-box2 .box-b button {
-    width: 105px;
-    height: 35px;
-    border: none;
-    border-radius: 5px;
-    background-color: #e8e8e8;
-    font-size: 11px;
-    cursor: pointer;
-}
-
-.visual .a-box .a-box2 .box-b button:hover {
-    box-shadow: inset 0px 0px 3px 3px #a4a4a4;
-}
-
-.visual .a-box .a-box2 .a-box_rr2 {
-    margin-left: 900px;
-    margin-top: 60px;
-    width: 140px;
-    height: 52px;
-    /* border: 1px solid; */
-}
-
-.visual .a-box .a-box2 .a-box_rr2 button {
-    margin-top: px;
-    width: 140px;
-    height: 52px;
-    background-color: #1966b2;
-    border-radius: 15px;
-    color: white;
-    font-size: 20px;
-    font-family: "NanumSquareB";
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    border: none;
-}
-
-.visual .a-box .a-box2 .box-t2 .a-box_rr2 button:hover {
-    font-size: 22px;
-    box-shadow: inset 0px 0px 7px 7px #15589c;
-    border: 1px solid rgb(74, 75, 76);
-}
-
-
-/* -------------------------------------비회원 창 */
-
-
-.no-login {
-    position: absolute;
-    display: block;
-    width: 1110px;
-    height: 300px;
-    /* border: 1px solid; */
-    padding: 125px 220px;
-    display: none;
-}
-
-.no-login table {
-    position: absolute;
-}
-
-.no-login .no-login1 {
-    width: 200px;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #cccccc;
-    text-align: center;
-    cursor: pointer;
-}
-
-.no-login .no-login2 {
-    width: 400px;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #cccccc;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-.visual .a-box .a-box2 .a-box_rr3 button {
-    width: 140px;
-    height: 52px;
-    background-color: #1966b2;
-    border-radius: 15px;
-    color: white;
-    font-size: 20px;
-    font-family: "NanumSquareB";
-    cursor: pointer;
-    /* position: relative;
-    z-index: 2; */
-    /* border: 1px solid red; */
-    margin-left: 680px;
-    border: none;
-}
-
-
-
-
-
-
-
-/*  --------------------------------------------con1------- */
-
-.con1 {
-    width: 1110px;
-    height: 530px;
-    margin: 0 auto;
-    display: flex;
-
-}
-
-.con1 .con1-1 {
-    width: 610px;
-    height: 300px;
-    margin-top: 100px;
-}
-
-.con1 .con1-1 h2 {
-    width: 120px;
-    line-height: 40px;
-    border-radius: 40px;
-    text-align: center;
-    position: absolute;
-    margin-left: 30px;
-    /* -webkit-text-stroke-color: rgba(255, 255, 255, 0.897); */
-    /* -webkit-text-stroke-width: 10px ; */
-    background-color: white;
-}
-
-.con1 .con1-1 table {
-    margin-top: 20px;
-    border: 1px solid rgb(212, 211, 211);
-    border-radius: 15px;
     width: 100%;
-    height: 100%;
-    padding: 30px 50px;
-    
+    height: 800px;
+    border: 1px solid green;
 }
-
-.con1 .con1-1 table:hover {
-    box-shadow: 0px 0px 10px rgb(165, 165, 165) ;
-}
-
-
-
-.con1 .con1-1 table td {
-    border-bottom: 1px solid rgb(178, 177, 177);
-}
-
-
-.con1 .con1-1 table a {
-    height: 30px;
-    margin-left: 10px;
-    font-family: "NotoSansKR-L";
-}
-
-.con1 .con1-1 table a:hover {
-    font-weight: bold;
-}
-
-.con1 .con1-1 table .sm {
-    font-size: 14px;
-    width: 25%;
-    text-align: center;
-    
-}
-
-.con1 .con1-2 {
-    margin-top: 120px;
-}
-
-.con1 .con1-2 .icon {
-    display: flex;
-    width: 500px;
-    height: 250px;
-}
-
-.con1 .con1-2::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.con1 .con1-2 .icon li {
-    flex: 1;
-    width: 150px;
-    height: 205px;
-    /* border: 1px solid; */
-    margin-left: 15px;
-    overflow: hidden;
-    border-radius: 15px;
-    border: 1px solid rgb(212, 211, 211);
-    
-}
-
-.con1 .con1-2 .icon li:hover {
-    box-shadow: 0px 0px 10px rgb(89, 89, 89) ;
-}
-
-.con1 .con1-2 .icon .icon-d {
-    margin-top: 100px;
-}
-
-.con1 .con1-2 .icon li img {
-    object-fit: cover;
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 130px;
-    
-}
-
-.con1 .con1-2 .icon li img:hover {
-    transform: scale(1.1);
-}
-
-/*  --------------------------------------------con2------- */
-
-.con2 {
-    width: 100%;
-    height: 840px;
-    
-}
-
-.con2 .con2-1 {
-    width: 100%;
-    height: 420px;
-    background-color: #a6c4e1;
-    position: absolute;
-    display: flex;
-    padding: 20px 60px;
-}
-
-.con2 .con2-1 img:hover {
-    transform: scale(1.05);
-}
-
-.con2 .con2-2 {
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 420px;
-    top: 300px;
-}
-
-.con2 .con2-2 .trip {
-    width: 430px;
-    height: 340px;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    
-}
-
-.con2 .con2-2 .trip:hover {
-    box-shadow: 0px 0px 20px rgb(56, 56, 56) ;
-}
-
-
-.con2 .con2-2 .trip img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.con2 .con2-2 .trip img:hover {
-    transform: scale(1.05);
-}
-
-/* ---------------------------------------------visual */
-
 
 
 /*  --------------------------------------------footer------- */
 
 footer {
+    bottom: 0;
     width: 100%;
     height: 210px;
     border-top: 1px solid rgb(180, 180, 180);
     padding: 20px;
-    overflow: hidden;
-    
+    /* overflow: hidden; */
+    border: 1px solid red;
 }
 
 footer .foot {
     width: 1300px;
     height: 110px;
-    /* border: 1px solid; */
+    border: 1px solid;
     margin: 0px auto;
     position: relative;
     padding: 30px 0;
@@ -1040,10 +608,6 @@ footer ul li img {
     bottom: 0;
     z-index: 1000;
 }
-
-/* .r-f .quick:hover {
-    background-color: rgba(236, 155, 40, 1);
-} */
 
 .r-f .as-s {
     position: absolute;
