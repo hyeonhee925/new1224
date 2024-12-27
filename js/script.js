@@ -69,16 +69,31 @@ $(function(){
         $(".a-box2 .box-t2 .linebox1-1 li a").removeClass("on2-2");
         $(this).addClass("on2-2");
     });
+    
 
+// ---------------------------------------고객센터 슬라이드
+    $(".as-s").hide();
 
+    let toggle = (function () {
+        let isOpen = false; // 닫힘 상태로 시작
+        return function () {
+            if (!isOpen) {
+                $(".as-s").show();
+                $(".as-s").animate({ right : "0" });
+                $(".quick").animate({ right : "400px" });
+            }
+            else {
+                $(".as-s").animate({ right : "-380px"});
+                $(".quick").animate({ right : "8px"});
+                $(".as-s").hide("200");
+            };
+            isOpen = !isOpen;
+        };
+    })();
 
+    $(".quick").click(toggle);
 
-
-
-
-
-
-
+//  ------------------------------------------------------------
 
 
 
@@ -128,51 +143,15 @@ $(window).scroll(function(){
     } else {
         $(".top").fadeOut();
     }
-
-    $(".top").click(function(ev){
-        ev.preventDefault();
-
-        $("html, body").animate({scrollTop : 0});
-        return false;
-    });
-
-
 });
 
+$(".top").click(function(){
+    // ev.preventDefault();
 
-// $(".as").click(function(){
-//     $(".as-s").show();
-//     $(".quick").animate({ right: "420px"},500);
-//     $(".as-s").animate({ right: "20px"},500);
-    
-// },function(){
-//     $(".quick").animate({ right: "80px"},500);
-//     // $(".as-s").animate({ right: "-300px"},500);
-// });
+    $("html, body").animate({scrollTop : 0});
+    return false;
+});
 
-// $(".as").click(function(event){
-//     // $(".as-s").show();
-//     // $(".quick").fadeToggle();
-//     $(".as-s").fadeToggle({ right: "200px"},500);
-    
-// });
-
-// $(".as")
-
-
-
-// $(".a-box1>li a").click(function(ev){
-//     ev.preventDefault();  //a테그 사용 클릭시 위아래로 깔짝깔짝 움직이는거 안하게 하는 return false랑 같은 의미
-
-//     $(".a-box1>li a").removeClass("on");
-//     $(this).addClass("on");
-
-//     $(".a-box2>li").hide();
-//     $($(this).attr("href")).show(); //attr(속성이라는 뜻 어트리브트?)a=href,img=src 
-//     // return false;
-
-// });
-
-
+// -------------------------------------
 
 
